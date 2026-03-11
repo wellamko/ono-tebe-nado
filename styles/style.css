@@ -349,7 +349,7 @@ body{
 
 }
 
-.about__text{
+.about__text{/**/
     display: flex;
     flex-direction: column;
     font-size: 20px;
