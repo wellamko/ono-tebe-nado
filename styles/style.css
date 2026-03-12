@@ -1,15 +1,15 @@
 * {
-  font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
     margin: 0;
     font-family: Raleway, sans-serif;
-    background-color: white ;
+    background-color: white;
 }
 
 .content-section {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     width: 1100px;
     margin: auto;
 }
@@ -22,15 +22,17 @@ body {
     color: black;
 }
 
-.header { /*вся шапка*/
+.header {
+    /*вся шапка*/
     display: grid;
     justify-content: space-between;
     grid-template-columns: 1fr min-content 1fr;
-    align-items:center;
+    align-items: center;
     padding: 92px 50px 91px 50px;
 }
 
-.header__links-list { /*список ссылок*/
+.header__links-list {
+    /*список ссылок*/
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -38,87 +40,98 @@ body {
     padding: 0;
 }
 
-.header__links-list-item { /*каждый пункт в списке*/      
-    list-style-type: none;    
-    margin-left: 0;   
+.header__links-list-item {
+    /*каждый пункт в списке*/
+    list-style-type: none;
+    margin-left: 0;
 }
 
-.header__links-list-item_no-bullit .header__link { /*сделать ссылку без кружочка*/
+.header__links-list-item_no-bullit .header__link {
+    /*сделать ссылку без кружочка*/
     text-decoration: none;
     list-style-type: none;
 }
 
-.header__link { /*каждая ссылка в пункте списка*/
-    display: list-item; 
+.header__link {
+    /*каждая ссылка в пункте списка*/
+    display: list-item;
     list-style-type: circle;
     list-style-position: inside;
     color: black;
     line-height: 1.2;
-    text-decoration: underline; 
+    text-decoration: underline;
     text-underline-offset: 4px;
     font-size: 18px;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
-.header__link_active { /*выбранная ссылка меню (без подчёркивания)*/
+.header__link_active {
+    /*выбранная ссылка меню (без подчёркивания)*/
     text-decoration: none;
 }
 
-.header__logo { /*контейнер логотипа*/
+.header__logo {
+    /*контейнер логотипа*/
     justify-self: center;
 }
 
-.header__logo-image { /*картинка с логотипом*/
+.header__logo-image {
+    /*картинка с логотипом*/
     width: 148px;
     height: 105px;
 }
 
-.address { /*общий класс для блока с адресом*/
+.address {
+    /*общий класс для блока с адресом*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-style: normal; 
-    max-width:fit-content;
-    justify-self:end;
+    font-style: normal;
+    max-width: fit-content;
+    justify-self: end;
 }
 
 .address a {
-    color: black;              
+    color: black;
     text-decoration: underline;
-    line-height: 1.5; 
+    line-height: 1.5;
     margin: 0;
 }
 
-.header__address { /*для выравнивания блока с адресом*/
+.header__address {
+    /*для выравнивания блока с адресом*/
     color: black;
     font-size: 18px;
-    line-height: 1; 
+    line-height: 1;
     margin: 0;
     padding-right: 37px;
 }
 
 .header__address a {
     margin: 0;
-    display: block; 
-} 
-.header__address p {
-    margin: 0;
-    display: block; 
+    display: block;
 }
 
-.cover { /*вся секция*/
-    display: flex;   
+.header__address p {
+    margin: 0;
+    display: block;
+}
+
+.cover {
+    /*вся секция*/
+    display: flex;
     flex-direction: column;
     min-height: 690px;
     padding: 75px 19px 53px 49px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
-    background-position: center bottom;  
+    background-position: center bottom;
     background-size: cover;
-    position:relative;
+    position: relative;
 }
 
-.overlay { /*полупрозрачный блок*/
+.overlay {
+    /*полупрозрачный блок*/
     position: absolute;
     top: 0;
     left: 0;
@@ -128,13 +141,15 @@ body {
     z-index: 0;
 }
 
-.cover__title, .cover__description {
-  position: relative; 
-  z-index: 1;
+.cover__title,
+.cover__description {
+    position: relative;
+    z-index: 1;
 }
 
-.cover__title { /*заголовок*/
-    display: flex; 
+.cover__title {
+    /*заголовок*/
+    display: flex;
     flex-direction: column;
     line-height: 1px;
     width: 100%;
@@ -159,7 +174,7 @@ body {
     letter-spacing: 30px;
 }
 
-.aligned-text_center { 
+.aligned-text_center {
     text-align: center;
     letter-spacing: 30px;
 }
@@ -183,9 +198,9 @@ body {
 
 .cover__description {
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     white-space: nowrap;
     margin-top: auto;
     width: 100%;
@@ -194,7 +209,7 @@ body {
 }
 
 .cover__description-text {
-    margin: 0; 
+    margin: 0;
     text-transform: uppercase;
     font-size: 22px;
 }
@@ -208,7 +223,8 @@ body {
     text-transform: uppercase;
 }
 
-.lots { /*вся секция*/
+.lots {
+    /*вся секция*/
     display: flex;
     gap: 27px;
     flex-direction: column;
@@ -216,36 +232,41 @@ body {
     padding: 250px 28px 0px 22px;
 }
 
-.lots__heading { /*заголовок секции*/
+.lots__heading {
+    /*заголовок секции*/
     font-weight: bold;
     font-size: 40px;
     text-transform: uppercase;
     padding: 0px 40px;
-    
+
 }
 
-.lots__card-list { /*список карточек*/
+.lots__card-list {
+    /*список карточек*/
     display: flex;
     flex-direction: row;
     gap: 25px;
     list-style: none;
-    padding: 0; 
+    padding: 0;
     margin: 0;
 }
 
-.lots__card-list-item { /*пункт списка карточек*/
+.lots__card-list-item {
+    /*пункт списка карточек*/
     flex: 1;
     height: 522px;
     display: flex;
 }
 
-.card-link { /*ссылка, обрамляющая карточку*/
+.card-link {
+    /*ссылка, обрамляющая карточку*/
     position: relative;
-    z-index: 2; 
+    z-index: 2;
     color: white;
 }
 
-.card { /* карточка */
+.card {
+    /* карточка */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -261,7 +282,7 @@ body {
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
     background-size: cover;
     padding-top: 24px;
 
@@ -270,7 +291,7 @@ body {
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
     background-size: cover;
     padding-top: 24px;
 }
@@ -278,64 +299,71 @@ body {
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
     background-size: cover;
     padding-top: 24px;
 }
 
-.card__title { /* заголовок карточки */
+.card__title {
+    /* заголовок карточки */
     font-size: 22px;
     line-height: 1.2;
     z-index: 1;
     text-transform: uppercase;
 }
 
-.card__text { /* текст карточки */
+.card__text {
+    /* текст карточки */
     font-size: 20px;
     line-height: 1.1;
     z-index: 1;
     font-weight: normal;
 }
 
-.lots__look-more-link {/* ссылка «Посмотреть больше» */
+.lots__look-more-link {
+    /* ссылка «Посмотреть больше» */
     display: block;
     margin-top: 30px;
-    text-align: left; 
+    text-align: left;
     color: black;
     font-size: 20px;
     z-index: 5;
     padding: 48px 68px 70px 39px;
 }
 
-.about {/*вся секция*/
+.about {
+    /*вся секция*/
     display: grid;
-    grid-template-columns: 1fr 693px; 
+    grid-template-columns: 1fr 693px;
     gap: 25px;
     padding: 80px 30px 90px 69px;
 }
 
-.about__column {/*класс для колонок*/
+.about__column {
+    /*класс для колонок*/
     grid-column: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     gap: 87px;
-    min-height: 240px; 
-    padding-left: 0; 
+    min-height: 240px;
+    padding-left: 0;
 }
 
-.about__logo {/*контейнер с логотипом*/
+.about__logo {
+    /*контейнер с логотипом*/
     grid-column: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 240px;
     height: 240px;
-    background-color: black; 
+    background-color: black;
     border-radius: 50%;
 }
 
-.about__logo-image {/*изображение логотипа*/
+.about__logo-image {
+    /*изображение логотипа*/
     width: 148px;
 }
 
@@ -344,7 +372,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
-    line-height: 1; 
+    line-height: 1;
     padding-top: 100px;
 
 }
@@ -355,17 +383,19 @@ body {
     font-size: 20px;
     font-weight: normal;
     gap: 10px;
-    padding: 0; 
+    padding: 0;
 }
 
-.footer { /*подвал*/
+.footer {
+    /*подвал*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding: 0px 50px 92px 50px;
 }
 
-.footer__menu { /*блок навигации по списку ссылок*/
+.footer__menu {
+    /*блок навигации по списку ссылок*/
     justify-self: center;
     text-align: center;
 }
@@ -374,7 +404,8 @@ body {
     justify-self: start;
 }
 
-.footer__menu-list { /*список пунктов меню*/
+.footer__menu-list {
+    /*список пунктов меню*/
     list-style: none;
     padding: 0;
     margin: 0;
@@ -383,40 +414,47 @@ body {
     gap: 10px;
 }
 
-.footer__menu-list-item { /*пункт списка меню*/
+.footer__menu-list-item {
+    /*пункт списка меню*/
     margin: 0;
     padding: 0;
 }
 
-.footer__menu-link { /*каждая ссылка в пункте списка*/
+.footer__menu-link {
+    /*каждая ссылка в пункте списка*/
     color: black;
     text-decoration: none;
     font-size: 18px;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
-.footer__menu-link_active { /*выбранная ссылка меню (без подчёркивания)*/
+.footer__menu-link_active {
+    /*выбранная ссылка меню (без подчёркивания)*/
     text-decoration: none;
 }
 
-.footer__social-list { /*список ссылок на социальные сети*/
+.footer__social-list {
+    /*список ссылок на социальные сети*/
     display: flex;
     justify-self: end;
     gap: 48px;
     list-style: none;
 }
 
-.footer__social-list-item { /*пункт списка ссылок на социальные сети*/
+.footer__social-list-item {
+    /*пункт списка ссылок на социальные сети*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footer__social-link { /*ссылка на социальные сети*/
+.footer__social-link {
+    /*ссылка на социальные сети*/
     display: flex;
 }
 
-.footer__social-icon { /*иконка социальной сети*/
+.footer__social-icon {
+    /*иконка социальной сети*/
     width: 48px;
     height: 48px;
 }
