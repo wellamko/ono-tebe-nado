@@ -37,7 +37,7 @@ a {
     justify-content: space-between;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 91px 50px;
+    padding: 88px 50px 91px 50px;
 }
 
 .header__links-list {
@@ -146,7 +146,7 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    letter-spacing: 0.4em;
+    letter-spacing: 30px;
     margin-right: -0.4em;
     line-height: 1.1;
 }
@@ -159,17 +159,20 @@ a {
 .aligned-text_left {
     text-align: left;
     margin-left: 30px;
+    margin-top:6px;
 }
 
 .aligned-text_center {
     text-align: center;
     margin-top: 18px;
+    padding-left: 13px;
 }
 
 .aligned-text_right {
     text-align: right;
     margin-right: 0px;
     margin-top: 17px;
+    margin-right: 9px;
 }
 
 .cover__description {
@@ -177,7 +180,9 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    letter-spacing: 0.2em;
+    letter-spacing: 3px;
+    margin-top: 108px;
+    padding-left: 27px;
 }
 
 .cover__description-text {
@@ -189,7 +194,7 @@ a {
 .bet-button {
     background: transparent;
     border: 1px solid white;
-    padding: 15px 11px 12px 12px;
+    padding: 15px 51px 12px 12px;
     color: white;
     font-size: 22px;
     text-transform: uppercase;
@@ -199,7 +204,7 @@ a {
     display: flex;
     gap: 25px;
     flex-direction: column;
-    padding: 178px 24px 120px 24px;
+    padding: 182px 24px 120px 24px;
 }
 
 .lots__heading {
@@ -223,7 +228,7 @@ a {
 
 .lots__card-list-item {
     display: flex;
-    min-height: 450px;
+    min-height: 596px;
 }
 
 .card-link {
@@ -246,14 +251,20 @@ a {
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
+    padding-top: 48px;
+    padding-bottom: 47px;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
+    padding-top: 48px;
+    padding-bottom: 57px;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
+    padding-top: 48px;
+    padding-bottom: 54px;
 }
 
 .card__title {
@@ -274,14 +285,14 @@ a {
     font-size: 20px;
     color: black;
     padding-left: 40px;
-    padding-top: 3px;
+    padding-top: 7px;
 }
 
 .about {
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: 40px;
-    padding: 35px 24px 0px 47px;
+    padding: 35px 29px 0px 72px;
 }
 
 .about__column {
@@ -321,14 +332,14 @@ a {
     flex-direction: column;
     font-size: 20px;
     padding-left: 30px;
-    padding-top: 43px;
+    padding-top: 66px;
 }
 
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding: 180px 50px 82px 50px;
+    padding: 185px 50px 82px 50px;
 }
 
 .footer__menu {
